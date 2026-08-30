@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat+Alternates:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --green-dark: #70a85d;
+  --green: #88c791;
+  --green-deep: #4ca979;
+  --cream: #fff0c9;
+  --paper: #f5f0e6;
+  --ink: #245b42;
+  --muted: #5d765d;
+  --white: #fffdf5;
+  --placeholder: #d9d9d9;
+  --yellow: #f4ec98;
+  --max-width: 1050px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--cream);
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.45;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  position: relative;
+  min-height: 185px;
+  background: var(--green-dark);
+  overflow: hidden;
+}
+
+.header-inner {
+  width: min(calc(100% - 48px), var(--max-width));
+  min-height: 150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.brand {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff59a;
+}
+
+.brand-name {
+  font-family: "Montserrat Alternates", "Montserrat", Arial, sans-serif;
+  font-size: clamp(3rem, 7vw, 5.6rem);
+  line-height: .9;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  text-shadow: 2px 2px 0 #2e7553;
+}
+
+.brand-leaf {
+  position: absolute;
+  width: 40px;
+  height: 18px;
+  border-radius: 100% 0 100% 0;
+  background: linear-gradient(135deg, #e9ee6e, #6fbd63);
+  border: 2px solid rgba(37, 104, 70, .65);
+  transform: rotate(-25deg);
+}
+
+.leaf-one {
+  top: -18px;
+  left: 58%;
+}
+
+.leaf-two {
+  top: -5px;
+  left: 67%;
+  transform: rotate(15deg) scale(.75);
+}
+
+.main-nav {
+  display: flex;
+  gap: clamp(18px, 4vw, 52px);
+  align-items: center;
+}
+
+.main-nav a {
+  color: #fffbd6;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  opacity: .72;
+  transform: translateY(-2px);
+}
+
+.hero-wave {
+  position: absolute;
+  width: 120%;
+  height: 90px;
+  left: -10%;
+  bottom: -55px;
+  background: var(--paper);
+  border-radius: 50% 50% 0 0 / 55% 55% 0 0;
+  border-top: 4px solid #fff4a7;
+}
+
+section {
+  scroll-margin-top: 24px;
+}
+
+.container {
+  width: min(calc(100% - 48px), var(--max-width));
+  margin: 0 auto;
+}
+
+.section-light {
+  background: var(--paper);
+}
+
+.hero {
+  min-height: 410px;
+  padding: 35px 0 80px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hero-copy {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 330px);
+  gap: 28px;
+  align-items: start;
+}
+
+.image-placeholder {
+  background: var(--placeholder);
+  border: 1px solid #aaa;
+  color: #111;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 12px;
+  font-weight: 700;
+}
+
+.hero-placeholder {
+  min-height: 275px;
+}
+
+.hero-text {
+  padding-top: 4px;
+}
+
+.hero-text h1 {
+  display: none;
+}
+
+.hero-text p {
+  max-width: 330px;
+  color: #ffffff;
+  font-size: .82rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.about,
+.teapots {
+  background: var(--cream);
+  padding: 88px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.small-placeholder {
+  min-height: 125px;
+}
+
+.section-copy h2,
+.team h2,
+.contacts h2 {
+  margin: 0 0 16px;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 400;
+  letter-spacing: -.03em;
+  line-height: 1;
+}
+
+.section-copy p {
+  max-width: 380px;
+  margin: 0 0 12px;
+  font-size: .9rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.eyebrow {
+  margin: 0 0 8px !important;
+  color: var(--green-deep) !important;
+  font-size: .72rem !important;
+  font-style: normal !important;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+}
+
+.characters {
+  background: var(--green);
+  padding: 88px 0;
+}
+
+.split-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.25fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.character-gallery {
+  position: relative;
+  min-height: 280px;
+}
+
+.character-card {
+  position: absolute;
+  width: 43%;
+  height: 215px;
+}
+
+.card-left {
+  left: 0;
+  top: 35px;
+}
+
+.card-center {
+  left: 28%;
+  top: 0;
+  width: 43%;
+  height: 275px;
+  z-index: 2;
+}
+
+.card-right {
+  right: 0;
+  top: 35px;
+}
+
+.characters .section-copy h2,
+.characters .section-copy p,
+.characters .eyebrow {
+  color: var(--white) !important;
+}
+
+.teapots .reverse {
+  grid-template-columns: 1.1fr .9fr;
+}
+
+.tilted-placeholder {
+  width: 82%;
+  min-height: 245px;
+  transform: rotate(14deg);
+  justify-self: center;
+}
+
+.team {
+  position: relative;
+  background: var(--green);
+  padding: 72px 0 70px;
+  border-top: 5px solid var(--green-deep);
+}
+
+.team::before {
+  content: "";
+  position: absolute;
+  top: -36px;
+  left: -5%;
+  width: 110%;
+  height: 70px;
+  border-top: 5px solid var(--green-deep);
+  border-radius: 50%;
+  transform: rotate(2deg);
+  pointer-events: none;
+}
+
+.team-heading {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto 52px;
+}
+
+.team-heading h2 {
+  color: var(--white);
+}
+
+.team-heading p:last-child {
+  color: var(--white);
+  font-size: .78rem;
+  margin: 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.avatar {
+  width: 94px;
+  height: 94px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+}
+
+.avatar-pink { background: #f5c9e9; }
+.avatar-lilac { background: #d0c5f2; }
+.avatar-yellow { background: #f5eca1; }
+.avatar-blue { background: #bceff1; }
+
+.team-member h3 {
+  margin: 0;
+  color: var(--white);
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.team-member p {
+  margin: 2px 0 0;
+  color: var(--white);
+  font-size: .72rem;
+}
+
+.contacts {
+  background: var(--green-dark);
+  color: var(--white);
+  padding: 58px 0 72px;
+}
+
+.contacts-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 70px;
+  align-items: end;
+}
+
+.contacts h2 {
+  color: var(--white);
+}
+
+.contact-note {
+  margin: 0;
+  font-size: .85rem;
+}
+
+.contact-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 96px;
+  padding: 18px;
+  color: var(--white);
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,.5);
+  border-radius: 16px;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  background: rgba(255,255,255,.12);
+  transform: translateY(-3px);
+}
+
+.contact-link span {
+  font-size: .72rem;
+  opacity: .8;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.contact-link strong {
+  overflow-wrap: anywhere;
+  font-size: .86rem;
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .site-header {
+    min-height: 230px;
+  }
+
+  .header-inner {
+    min-height: 190px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .main-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hero-copy,
+  .about-grid,
+  .split-grid,
+  .teapots .reverse,
+  .contacts-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy {
+    gap: 18px;
+  }
+
+  .hero-placeholder {
+    min-height: 220px;
+  }
+
+  .about-gallery {
+    order: 2;
+  }
+
+  .character-gallery {
+    min-height: 250px;
+  }
+
+  .contacts-inner {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 560px) {
+  .container,
+  .header-inner {
+    width: min(calc(100% - 30px), var(--max-width));
+  }
+
+  .brand-name {
+    font-size: 3.5rem;
+  }
+
+  .main-nav {
+    gap: 14px;
+  }
+
+  .main-nav a {
+    font-size: .9rem;
+  }
+
+  .about,
+  .teapots,
+  .characters {
+    padding: 62px 0;
+  }
+
+  .about-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .small-placeholder {
+    min-height: 110px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 18px;
+  }
+
+  .contact-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .tilted-placeholder {
+    width: 90%;
+    min-height: 210px;
+  }
+}
+
+
+/* Typography */
+h1, h2, h3,
+.brand-name,
+.main-nav a {
+  font-family: "Montserrat Alternates", "Montserrat", Arial, sans-serif;
+}
+
+body,
+p,
+.contact-link,
+.contact-note {
+  font-family: "Montserrat", Arial, sans-serif;
+}
