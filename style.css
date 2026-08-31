@@ -193,10 +193,13 @@ section {
   margin: 0;
 }
 
-.about,
-.teapots {
+.about {
   background: var(--cream);
   padding: 88px 0;
+}
+
+.teapots {
+  background: var(--cream);
 }
 
 .about-grid {
