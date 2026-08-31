@@ -53,6 +53,10 @@ a {
   z-index: 2;
 }
 
+.rotator {
+    transform: rotate(-9deg);
+}
+
 .brand {
   position: relative;
   display: inline-block;
