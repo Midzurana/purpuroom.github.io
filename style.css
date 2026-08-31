@@ -34,11 +34,6 @@ a {
   color: inherit;
 }
 
-.avatar {
-  border-radius: 150px;
-  padding: 5px;
-}
-
 .site-header {
   position: relative;
   min-height: 185px;
@@ -345,8 +340,8 @@ section {
 }
 
 .avatar {
-  width: 94px;
-  height: 94px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto 16px;
   border-radius: 50%;
 }
@@ -355,6 +350,13 @@ section {
 .avatar-lilac { background: #d0c5f2; }
 .avatar-yellow { background: #f5eca1; }
 .avatar-blue { background: #bceff1; }
+
+.avatar-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  padding: 5px;
+}
 
 .team-member h3 {
   margin: 0;
