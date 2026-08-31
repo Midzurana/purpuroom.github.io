@@ -57,6 +57,10 @@ a {
     transform: rotate(-9deg);
 }
 
+.avatar {
+  border-radius: 150px
+}
+
 .brand {
   position: relative;
   display: inline-block;
