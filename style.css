@@ -344,6 +344,9 @@ section {
   height: 150px;
   margin: 0 auto 16px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .avatar-pink { background: #f5c9e9; }
@@ -355,7 +358,6 @@ section {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  padding: 5px;
 }
 
 .team-member h3 {
