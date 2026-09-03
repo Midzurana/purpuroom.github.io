@@ -175,7 +175,7 @@ section {
 }
 
 .hero-text {
-  padding-top: 4px;
+  padding-top: 84px;
 }
 
 .hero-text h1 {
@@ -185,7 +185,7 @@ section {
 .hero-text p {
   max-width: 330px;
   color: #ffffff;
-  font-size: .82rem;
+  font-size: .9rem;
   font-style: italic;
   margin: 0;
 }
